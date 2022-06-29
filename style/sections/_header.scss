@@ -1,0 +1,88 @@
+.header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    background-color: black;
+
+    &__menu__cover {
+        margin: 0 auto;
+        width: 1049px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        color: $main-color;
+        @include font('Montserrat',
+            20px,
+            700);
+        text-align: center;
+    }
+
+    &__menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: $main-color;
+        font-weight: bold;
+        @include font('Montserrat',
+            14px,
+            400);
+
+        &__link {
+            width: 90px;
+            height: 39px;
+            line-height: 38px;
+            text-decoration: none;
+            color: $main-color;
+
+            &__active {
+                color: $secondary-color;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+
+        &__link:hover {
+            color: $secondary-color;
+            font-weight: bold;
+        }
+
+        &__fb {
+            width: 28px;
+            height: 28px;
+
+            background: {
+                image: url('./images/facebook.svg');
+                position: center;
+                size: cover;
+                repeat: no-repeat;
+            }
+
+        }
+
+        &__fb:hover {
+            background: {
+                image: url('./images/facebook-g.svg');
+            }
+        }
+    }
+
+    & a {
+        display: block;
+    }
+
+}
+
+.header__logo {
+    height: 869.6px;
+    width: 100%;
+
+    background: {
+        image: url('./images/noroot.png');
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+    }
+}

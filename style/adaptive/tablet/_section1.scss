@@ -1,0 +1,13 @@
+.section__1 {
+    width: 768px;
+    &__cover {
+        &__step {
+            width: 748px;
+            &__1,
+            &__2,
+            &__3 {
+                @include menu-item(236px, 400px);
+            }
+        }
+    }
+}

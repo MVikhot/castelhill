@@ -1,0 +1,41 @@
+.header {
+    margin: 0 auto;
+    width: 320px;
+    height: 540px;
+    background: {
+        image: url('./images/Header/Background.png');
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+    }
+    &__menu {
+        margin: 0 auto;
+        &__cover {
+            padding-top: 28px;
+            height: 175px;
+            margin: 0 auto;
+            flex-direction: column-reverse;
+            width: 300px;
+        }
+    }
+    &__text {
+        height: 185px;
+        margin-top: 29px;
+        width: 272px;
+        & h1 {
+            height: 74px;
+            font-size: 30px;
+            line-height: 37px;
+        }
+        & p {
+            height: 49px;
+            line-height: 24px;
+            @include font('Roboto',
+            18px,
+            300);
+        }
+        & button {
+            width: 280px;
+        }
+    }
+}
