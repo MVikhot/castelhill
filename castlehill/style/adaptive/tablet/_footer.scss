@@ -1,0 +1,13 @@
+.footer {
+    width: 768px;
+    &__container {
+        justify-content: space-between;
+        width: 690px;
+        &__menu {
+            margin-right: 0px;
+            display: flex;
+            justify-content: space-between;
+            width: 243px;
+        }
+    }
+}

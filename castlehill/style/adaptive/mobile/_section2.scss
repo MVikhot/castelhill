@@ -1,0 +1,51 @@
+.section__2 {
+    width: 320px;
+    height: 1030px;
+    justify-content: space-between;
+    & h2 {
+        margin-top: 5px;
+        font-size: 24px;
+    }
+    &__avatar__cover {
+        margin: 0 auto;
+        height: 883px;
+        display: grid;
+        grid-template-columns: 300px;
+    }
+    &__avatar {
+        margin: 0 auto;
+        &.avatar__1 {
+            height: 205px;
+            grid-column: 1 / 1;
+            grid-row: 1 / 1;
+        }
+        &.avatar__2 {
+            height: 205px;
+            grid-column: 1 / 1;
+            grid-row: 3 / 3;
+        }
+        &.avatar__3 {
+            height: 224px;
+            grid-column: 1 / 1;
+            grid-row: 2 / 2;
+        }
+        &.avatar__4 {
+            height: 205px;
+            grid-column: 1 / 1;
+            grid-row: 4 / 4;
+        }
+        & h2 {
+            height: max-content;
+            line-height: 0px;
+            font-size: 14px;
+        }
+        & p {
+            font-size: 13px;
+            line-height: 14px;
+        }
+    }
+    & button {
+        margin-top: 20px;
+        width: 280px;
+    }
+}

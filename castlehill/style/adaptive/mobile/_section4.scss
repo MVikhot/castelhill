@@ -1,0 +1,22 @@
+.section__4 {
+    width: 300px;
+    height: 126px;
+    & h2 {
+        font-size: 22px;
+        margin-bottom: 46px;
+    }
+    & P {
+        margin-bottom: 14px;
+    }
+    &__form {
+        height: 90px;
+        flex-direction: column;
+        align-items: center;
+        & input {
+            width: 283px;
+        }
+        & button {
+            width: 280px;
+        }
+    }
+}

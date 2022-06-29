@@ -1,0 +1,25 @@
+.section__3 {
+    width: 768px;
+    &__container {
+        margin: 0 auto;
+        width: 748px;
+        height: 971px;
+        &__1__1,
+        &__1__2,
+        &__1__3,
+        &__2__1,
+        &__2__2,
+        &__2__3,
+        &__3__1,
+        &__3__2,
+        &__3__3 {
+            border-radius: 4px;
+            background-position: center;
+        }
+    }
+    & h2 {
+        line-height: 33px;
+        margin-bottom: 31px;
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,50 @@
+.footer {
+    width: 320px;
+    &__container {
+        margin-top: 22px;
+        margin-bottom: 40px;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+        & h2 {
+            margin-bottom: 18px
+        }
+        & ul li:first-child {
+            margin-top: 4px;
+        }
+        &__menu {
+            margin-right: 0px;
+            width: 280px;
+            height: 77px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            &__first,
+            &__second {
+                display: flex;
+                flex-direction: row;
+                & li {
+                    margin: 4px;
+                }
+            }
+        }
+        &__logo {
+            margin-top: 16px;
+            width: auto;
+            justify-content: center;
+            align-items: center;
+            &__img {
+                margin-top: 6px;
+            }
+        }
+    }
+}

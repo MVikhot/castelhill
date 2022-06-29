@@ -1,0 +1,68 @@
+.section__3 {
+    height: 1025px;
+    margin-top: 35px;
+    width: 320px;
+    &__container {
+        margin: 0 auto;
+        width: 300px;
+        height: 900px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px;
+        gap: 10px 0px;
+        &__1__1 {
+            grid-row: 1 / 1;
+            background-image: url('./images/Mobile/Sport.png');
+        }
+        &__1__2 {
+            grid-row: 2 / 2;
+            background-image: url('./images/Mobile/Health.png');
+        }
+        &__1__3 {
+            grid-row: 3 / 3;
+            background-image: url('./images/Mobile/Extreme.png');
+        }
+        &__2__1 {
+            grid-row: 4 / 4;
+            background-image: url('./images/Mobile/Games.png');
+        }
+        &__2__2 {
+            grid-row: 5 / 5;
+            background-image: url('./images/Mobile/Culture.png');
+        }
+        &__3__1 {
+            grid-row: 6 / 6;
+            background-image: url('./images/Mobile/Enjoimet.png');
+        }
+        &__3__2 {
+            grid-row: 7 / 7;
+            background-image: url('./images/Mobile/Trevelling.png');
+        }
+        &__1__1,
+        &__1__2,
+        &__1__3,
+        &__2__1,
+        &__2__2,
+        &__3__1,
+        &__3__2 {
+            filter: brightness(0.9);
+            color: $main-color;
+            @include font ('Montserrat',
+            22px,
+            700);
+            text-align: center;
+            text-shadow: black 2px 0 10px;
+            line-height: 125px;
+            width: 300px;
+            height: 120px;
+            grid-column: 1 / 1;
+            border-radius: 4px;
+            background-position: left;
+        }
+    }
+    & h2 {
+        height: 56px;
+        line-height: 27px;
+        margin-bottom: 31px;
+        font-size: 22px;
+    }
+}
