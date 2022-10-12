@@ -8,7 +8,7 @@
     &__menu__cover {
         margin: 0 auto;
         width: 1049px;
-        height: 50px;
+        height: 100%;
         display: flex;
         justify-content: space-between;
         color: $main-color;
@@ -76,13 +76,16 @@
 }
 
 .header__logo {
+    background-color: black;
+
+    display: block;
     height: 869.6px;
     width: 100%;
 
     background: {
         image: url('./images/noroot.png');
         position: center;
-        size: cover;
+        size: contain;
         repeat: no-repeat;
     }
 }

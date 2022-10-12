@@ -153,7 +153,7 @@ table {
 .header__menu__cover {
   margin: 0 auto;
   width: 1049px;
-  height: 50px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   color: #ffffff;
@@ -206,11 +206,13 @@ table {
 }
 
 .header__logo {
+  background-color: black;
+  display: block;
   height: 869.6px;
   width: 100%;
   background-image: url("./images/noroot.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -337,7 +339,7 @@ table {
 .section__3 {
   margin: 0 auto;
   width: 100%;
-  height: 500px;
+  height: 634px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -347,7 +349,8 @@ table {
 .section__3__cover {
   display: flex;
   justify-content: space-around;
-  height: 450px;
+  align-items: center;
+  height: 634px;
   width: 100%;
 }
 .section__3__cover__step {
@@ -361,7 +364,7 @@ table {
   display: flex;
   align-items: flex-end;
   width: 33.33%;
-  height: 450px;
+  height: 600px;
   background-image: url("./images/noroot.png");
   background-position: center;
   background-size: cover;
@@ -375,8 +378,16 @@ table {
   align-items: center;
   justify-content: center;
   width: 33.33%;
-  height: 450px;
+  height: 608px;
   background-image: url("./images/beer.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section__3__cover__step__2__img_style {
+  width: 33.33%;
+  height: 608px;
+  background-image: url("./images/style/team.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -389,7 +400,7 @@ table {
   align-items: center;
   color: #ffffff;
   width: 33.33%;
-  height: 450px;
+  height: 600px;
 }
 .section__3__cover__step p {
   line-height: 1.55;
@@ -441,7 +452,7 @@ table {
 }
 .section__5__cover {
   margin: 0 auto;
-  width: 90%;
+  width: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -449,35 +460,101 @@ table {
   align-content: flex-start;
 }
 .section__5__cover__beer {
+  text-decoration: none;
+  color: #000000;
   padding: 10px;
   width: 360px;
-  height: 650px;
+  height: 760px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .section__5__cover__beer .photo {
+  display: block;
+}
+.section__5__cover__beer .photo__b1 {
   height: 400px;
   background-image: url("./images/beer/beer1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.section__5__cover__beer h3 {
+.section__5__cover__beer .photo__b2 {
+  height: 400px;
+  background-image: url("./images/beer/beer2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section__5__cover__beer .photo__b3 {
+  height: 400px;
+  background-image: url("./images/beer/beer3.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section__5__cover__beer .photo__b4 {
+  height: 400px;
+  background-image: url("./images/beer/beer4.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section__5__cover__beer .photo__s1 {
+  height: 400px;
+  background-image: url("./images/style/first_item.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section__5__cover__beer .photo__s1:hover {
+  background-image: url("./images/style/first_item_h.jpeg");
+}
+.section__5__cover__beer .photo__s2 {
+  height: 400px;
+  background-image: url("./images/style/second_item.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section__5__cover__beer .photo__s2:hover {
+  background-image: url("./images/style/second_item_h.jpeg");
+}
+.section__5__cover__beer .photo__s3 {
+  height: 400px;
+  background-image: url("./images/style/third_item.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section__5__cover__beer .photo__s3:hover {
+  background-image: url("./images/style/third_item_h.jpeg");
+}
+.section__5__cover__beer .photo__s4 {
+  height: 400px;
+  background-image: url("./images/style/four_item.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section__5__cover__beer .photo__s4:hover {
+  background-image: url("./images/style/four_item_h.jpeg");
+}
+.section__5 h3 {
   font-size: 14px;
   line-height: 1.35;
 }
-.section__5__cover__beer h2 {
+.section__5 h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.55;
 }
-.section__5__cover__beer p {
+.section__5 p {
   font-size: 14px;
   line-height: 1.55;
 }
-.section__5__cover__beer button {
+.section__5 button {
   padding: 10px;
   width: 110px;
   height: 45px;
