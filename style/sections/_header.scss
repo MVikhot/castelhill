@@ -4,6 +4,7 @@
     height: 50px;
     margin: 0 auto;
     background-color: black;
+    z-index: 2;
 
     &__menu__cover {
         margin: 0 auto;
@@ -19,7 +20,9 @@
     }
 
     &__menu {
-        width: 100%;
+        margin: 0 auto;
+        width: 1049px;
+        height: 50px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -73,19 +76,61 @@
         display: block;
     }
 
+    &__burgerMenu {
+        width: 25px;
+        height: 25px;
+        display: none;
+
+        background: {
+            image: url('./images/hamburger.png');
+            position: center;
+            size: contain;
+            repeat: no-repeat;
+        }
+
+        &__cover {
+            padding-top: 15px;
+            width: 100px;
+            height: 215px;
+
+            &__link {
+                visibility: hidden;
+                margin: 5px;
+                width: 90px;
+                height: 39px;
+                line-height: 38px;
+                text-decoration: none;
+                color: $main-color;
+            }
+
+            &__link:hover {
+                color: $secondary-color;
+                font-weight: bold;
+            }
+        }
+    }
+
 }
 
 .header__logo {
     background-color: black;
-
-    display: block;
     height: 869.6px;
     width: 100%;
 
     background: {
         image: url('./images/noroot.png');
         position: center;
-        size: contain;
+        size: cover;
         repeat: no-repeat;
     }
+
+    &__top {
+        height: 50px;
+        width: 100%;
+    }
+}
+
+
+.header__burgerMenu__cover:hover .header__burgerMenu__cover__link {
+    visibility: visible;
 }

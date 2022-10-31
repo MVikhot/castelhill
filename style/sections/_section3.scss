@@ -21,17 +21,20 @@
             flex-direction: row;
             justify-content: space-between;
             width: 100%;
+            z-index: 1;
 
             &__1 {
                 display: flex;
                 align-items: flex-end;
                 @include menu-item(33.33%, 600px);
+                filter: brightness(70%);
 
                 background: {
                     image: url('./images/noroot.png');
                     position: center;
-                    size: cover;
+                    size: 150%;
                     repeat: no-repeat;
+
                 }
             }
 
@@ -53,12 +56,54 @@
 
                 &__img_style {
                     @include menu-item(33.33%, 608px);
+                    color: $main-color;
+                    font-weight: 400;
+                    font-size: 84px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
 
                     background: {
                         image: url('./images/style/team.jpeg');
                         position: center;
                         size: cover;
                         repeat: no-repeat;
+                    }
+                }
+
+                &__img_bar {
+                    @include menu-item(33.33%, 608px);
+                    color: $main-color;
+                    font-weight: 400;
+                    font-size: 84px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    background: {
+                        image: url('./images/bar.jpg');
+                        position: center;
+                        size: cover;
+                        repeat: no-repeat;
+                    }
+                }
+
+                &__img_contact {
+                    color: $main-color;
+                    font-weight: 400;
+                    font-size: 84px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include menu-item(33.33%, 608px);
+
+
+                    background: {
+                        image: url('./images/contact.jpeg');
+                        position: center;
+                        size: cover;
+                        repeat: no-repeat;
+
                     }
                 }
 
@@ -87,4 +132,14 @@
             }
         }
     }
+}
+
+.text {
+    color: $main-color;
+    font-weight: 400;
+    font-size: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include menu-item(33.33%, 608px);
 }
