@@ -94,7 +94,7 @@
             height: 215px;
 
             &__link {
-                visibility: hidden;
+                display: none;
                 margin: 5px;
                 width: 90px;
                 height: 39px;
@@ -132,5 +132,5 @@
 
 
 .header__burgerMenu__cover:hover .header__burgerMenu__cover__link {
-    visibility: visible;
+    display: block;
 }
